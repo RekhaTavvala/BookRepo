@@ -1,0 +1,104 @@
+body{
+    background-color: #E4F2F7;
+}
+
+#modalOverlay{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background: url('../images/pymodal_mask.png');
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#modalClose{
+   background: url('../images/close.png');
+   width:50px;
+   height:40px;
+   border:none;
+   position:absolute;
+   top:0px;
+   right:0px;
+   cursor: pointer;
+}
+#modalWrapper{
+    width: 300px;
+    height:300px;
+    background-color: #ffffff;
+    position: relative;
+}
+#modalContent{
+    background-color: beige;
+}
+
+.modal-header{
+    font-size: 20px;
+    font-weight:bold;
+    height: 30px;
+    padding-top: 10px;
+    padding-left:20px;
+}
+
+.modal-book-details{
+    overflow: auto;
+}
+.modal-book-details-wrapper{
+    height:260px;
+    overflow: auto;
+}
+
+.modal-book-details tr td{
+    padding-top: 10px;
+    padding-left:20px;
+    vertical-align:top;
+}
+
+.book-details{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.search-result{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.book-preview-img{
+    padding: 20px;
+}
+
+.book-details > div {
+    padding-bottom: 20px;
+    width: 70%;
+}
+
+#searchResults{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#modalContent .book-preview-img{
+    height: 200px;
+    width: 200px;
+}
+#paginationGadjet > a{
+    text-decoration : none;
+    padding: 5px;
+    color: #1961D0;
+    border-radius: 30px;
+}
+
+#loadingIcon{
+    display: none;
+    width:40px;
+    height:40px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+}

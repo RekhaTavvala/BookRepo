@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="lib/jquery.js"> </script>
+    <script type="text/javascript" src="lib/handlebars-v4.0.12.js"> </script>
+    <script type="text/javascript" src="js/handlebars_helpers.js"> </script>
+    <script type="text/javascript" src="js/all_books_template.js"></script>
+    <script type="text/javascript" src="js/single_book_template.js"></script>
+    <script type="text/javascript" src="js/custom_scripts.js"></script>
+</head>
+
+<body>
+    Enter any key word to search a book <input type="text" class="searchTextBox"> <br> <br>
+    <button class="searchButton" onclick="pega.actions.doSearch()"> Search</button>
+    <div id="loadingIcon">
+            <img src="images/demo_wait.gif"/>
+    </div>
+    <div id="resultsRoot"> </div>
+    <div id="modalOverlay" style="display:none">
+        <div id="modalWrapper">
+            <div id="modalContent"> </div>
+            <button id="modalClose"> </button>
+        </div>
+    </div>
+
+   
+     
+   
+</body>
+
+</html>
